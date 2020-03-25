@@ -85,7 +85,7 @@ export class NatureSelectComponent extends React.Component<INatureProps, INature
                 <>
                     <Form onSubmit={this.updateStoreNature}>
                         <Input type='select' onChange={this.updateNature}>
-                            <option>Select {()=>this.props.team==='team'?this.props.teamPokemon.name:this.props.opponentPokemon.name}'s nature </option>
+                            <option>Select {this.props.team==='team'?this.props.teamPokemon.name:this.props.opponentPokemon.name}'s nature </option>
                             <option>Hardy</option>
                             <option>Lonely</option>
                             <option>Brave</option>

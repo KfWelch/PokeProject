@@ -4,6 +4,7 @@ import { Row, Col } from 'reactstrap';
 import AbilitySelectComponent from '../poke-props-select-components/pokes-ability-select/AbilitySelectContainer';
 import MoveSelectComponent from '../poke-props-select-components/pokes-move-select/MoveSelectContainer';
 import NatureSelectComponent from '../poke-props-select-components/pokes-nature-select/NatureSelectContainer';
+import PokeStatusComponent from '../poke-props-select-components/pokes-status-select/PokeStatusContainer';
 
 interface IMenuProps {
     teamPokemon: any,
@@ -21,12 +22,14 @@ export class PokeMenuComponent extends React.Component<IMenuProps, any> {
                     <AbilitySelectComponent team="team"></AbilitySelectComponent>
                     <MoveSelectComponent team="team"/>
                     <NatureSelectComponent team="team"/>
+                    <PokeStatusComponent team="team" />
                 </Col>
                 <Col>
                     <PokemonSelectorComponent buttonText='Choose opposing Pokémon!' team="opponent"/>
                     <AbilitySelectComponent team="opponent"></AbilitySelectComponent>
                     <MoveSelectComponent team="opponent"/>
                     <NatureSelectComponent team="opponent"/>
+                    <PokeStatusComponent team="opponent" />
                 </Col>
             </Row>
             </>
