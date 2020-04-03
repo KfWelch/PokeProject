@@ -3,11 +3,11 @@ import { modifierActions } from "../action-mappers/team-modifier-actions";
 
 const intitialState: IModifiersTeamState = {
     ability: '',
-    effort: [],
+    effort: [0, 0, 0, 0, 0, 0],
     happy: 0,
     health: 0,
-    individual: [],
-    level: 0,
+    individual: [0, 0, 0, 0, 0, 0],
+    level: 1,
     move: null,
     nature: '',
     status: '',
