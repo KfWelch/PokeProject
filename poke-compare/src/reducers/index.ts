@@ -42,7 +42,7 @@ export interface IState {
 }
 
 export const state = combineReducers<IState> ({
-    pokemonState:pokemonReducer,
+    pokemonState: pokemonReducer,
     modifiersTeamState: modifiersTeamReducer,
     modifiersOpponentState: modifiersOpponentReducer
 })
