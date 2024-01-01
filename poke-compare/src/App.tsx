@@ -5,6 +5,7 @@ import { Provider } from 'react-redux';
 import { store } from './Store';
 import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
 import PokeMenuComponent from './components/poke-menu-component/PokeMenuContainer';
+import PokeExperience from './components/poke-experience-component/PokeExperienceComponent';
 
 const App: React.FC = () => {
   return (
@@ -13,6 +14,7 @@ const App: React.FC = () => {
         <Router>
           <Switch>
             <Route path='/pokemon' component={PokeMenuComponent} />
+            <Route path='/levelingCalculator' component={PokeExperience} />
           </Switch>
         </Router>
       </Provider>

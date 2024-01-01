@@ -6,4 +6,4 @@ export const pokeApiConfig = axios.create({
 
 export const apiConfig = axios.create({
     baseURL: 'http://localhost:8080/'
-});
+}, );

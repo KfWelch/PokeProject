@@ -61,7 +61,7 @@ export class LevelSelectComponent extends React.Component<ILevelProps, ILevelSta
                         max={100}
                     />
                 </>
-            )   
+            )
         } else {
             return (
                 <div/>
